@@ -22,7 +22,7 @@ namespace Cars.BLL.Services
                 throw new ArgumentException("value cannot be negative");
 
             if (toPage < fromPage)
-                throw new ArgumentException("value cannot be greater", nameof(toPage));
+                throw new ArgumentException("value cannot be greater", nameof(fromPage));
 
             var cars = _carRepository.GetCars();
 

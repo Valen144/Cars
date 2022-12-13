@@ -9,7 +9,7 @@ namespace Cars.API.Extensions
         {
             dbContext.Database.EnsureCreated();
 
-            for (int i = 0; i < 15; i++)
+            for (int i = 1; i < 15; i++)
             {
                 var car = dbContext.Cars.FirstOrDefault(b => b.Id == i);
                 if (car == null)
